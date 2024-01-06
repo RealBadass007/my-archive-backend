@@ -32,4 +32,4 @@ jobs:
       - name: Delete old container
         run: sudo docker rm -f myarchive-springboot-container
       - name: Run docker container
-        run: sudo docker run -d --name myarchive-springboot-container -e spring.datasource.url=${{ secrets.DB_URL }} -e spring.datasource.username=${{ secrets.DB_USERNAME }} -e spring.datasource.password=${{ secrets.DB_PASSWORD }} -p 8092:8091 realbadass/myarchive-springboot-image
+        run: sudo docker run -d --name myarchive-springboot-container -e spring.datasource.url=${{ secrets.DB_URL }} -e spring.datasource.username=${{ secrets.DB_USERNAME }} -e spring.datasource.password=${{ secrets.DB_PASSWORD }} -p 8091:8091 realbadass/myarchive-springboot-image
